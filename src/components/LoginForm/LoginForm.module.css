@@ -1,0 +1,87 @@
+.container {
+  width: 90%;
+  margin: 80px auto 0;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 15px;
+}
+
+.fieldContainer {
+  position: relative;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-bottom: 18px;
+}
+
+.passwordToggle {
+  position: absolute;
+  top: 22px;
+  right: 10px;
+  transform: translateY(-50%);
+  cursor: pointer;
+}
+
+.icon {
+  position: absolute;
+  top: 19px;
+  left: 0;
+  transform: translateY(-50%);
+  left: 10px;
+  color: #007bff;
+}
+
+.field {
+  background-color: #f0f0f0;
+  margin-left: 5px;
+  margin-bottom: 18px;
+  height: 36px;
+  width: 300px;
+  border: none;
+  border-bottom: 2px solid #ccc;
+  padding-left: 26px;
+  transition: border-bottom 100ms ease-in;
+}
+
+.field:hover::placeholder {
+  color: #007bff;
+}
+
+.titleH {
+  margin-top: 15px;
+  font-size: 35px;
+  text-align: center;
+}
+
+.formik {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.label {
+  margin-bottom: 5px;
+  display: block;
+}
+
+.error {
+  color: red;
+  max-width: 150px;
+}
+
+.button {
+  background-color: #007bff;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.button:hover {
+  background-color: #0056b3;
+}
+
+.icon:hover {
+  color: #007bff;
+}

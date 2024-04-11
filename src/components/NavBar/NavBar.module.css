@@ -1,0 +1,20 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  border: 1px solid #ccc;
+  box-shadow: 0 1px 5px #c5c5c5;
+}
+
+.left {
+  gap: 10px;
+  margin-left: 10px;
+  justify-content: center;
+  display: flex;
+  align-self: center;
+  text-align: center;
+  margin-right: auto;
+}
+
+.right {
+  margin-left: auto;
+}

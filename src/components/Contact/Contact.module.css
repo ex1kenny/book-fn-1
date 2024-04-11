@@ -1,0 +1,43 @@
+.container {
+  max-width: 301px;
+}
+
+.list {
+  padding: 5px;
+}
+
+.list span {
+  gap: 5px;
+  display: flex;
+  align-items: center;
+  margin-right: 10px;
+}
+
+.item {
+  font-size: 16px;
+
+  cursor: pointer;
+}
+
+.item p {
+  font-size: 14px;
+}
+
+.item p:hover {
+  color: #007bff;
+}
+
+.button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 8px 15px;
+  cursor: pointer;
+  font-size: 14px;
+  margin-left: auto;
+}
+
+.button:hover {
+  background-color: #0056b3;
+}
