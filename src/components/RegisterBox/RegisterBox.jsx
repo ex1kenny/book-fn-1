@@ -1,38 +1,20 @@
 import css from "./RegisterBox.module.css";
-import { Link } from "react-router-dom";
-import styled from "styled-components";
+import { NavLink } from "react-router-dom";
 
-const Wrapper = styled.div`
-  text-align: center;
-`;
-
-const Title = styled.h2`
-  color: #333;
-`;
-
-const SignInLink = styled(Link)`
-  display: inline-block;
-  background-color: #007bff;
-  color: white;
-  padding: 10px 20px;
-  border: none;
-  border-radius: 5px;
-  text-decoration: none;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
-
-  &:hover {
-    background-color: #0056b3;
-  }
-`;
-
-const RegisterBox = () => {
+const LoginBox = () => {
   return (
-    <Wrapper>
-      <Title>Do you have an account?</Title>
-      <SignInLink to="/login">Sign in</SignInLink>
-    </Wrapper>
+    <div className={css.container}>
+      <h2 className={css.title}>Welcome Back!</h2>
+      <p className={css.text}>
+        Log in to access your account and continue your journey with us
+      </p>
+      <button className={css.logButton}>
+        <NavLink to="/login" className={css.link}>
+          Sign in
+        </NavLink>
+      </button>
+    </div>
   );
 };
 
-export default RegisterBox;
+export default LoginBox;

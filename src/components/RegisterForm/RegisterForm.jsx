@@ -82,7 +82,7 @@ export default function RegisterForm() {
               placeholder="Enter your password"
             />
             <div className={css.passwordToggle} onClick={toggleShowPassword}>
-              {showPassword ? <MdVisibility /> : <MdVisibilityOff />}
+              {showPassword ? <MdVisibilityOff /> : <MdVisibility />}
             </div>
           </div>
           <ErrorMessage

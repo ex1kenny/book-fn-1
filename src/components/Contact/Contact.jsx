@@ -16,23 +16,20 @@ export default function Contact({ data: { name, number, id } }) {
   const dispatch = useDispatch();
   return (
     <div className={css.container}>
-      <div className={css.list}>
+      <div className={css.list} onClick={toggleModal}>
         <span>
           <FaUser />
-          <p className={css.item} onClick={toggleModal}>
-            {name}
-          </p>
+          <p className={css.item}>{name}</p>
         </span>
         <span>
           <BsFillTelephoneFill />
-          <p className={css.item} onClick={toggleModal}>
-            {number}{" "}
-          </p>
+          <p className={css.item}>{number} </p>
         </span>
         <button
           className={css.button}
           type="button"
-          onClick={() => {
+          onClick={(evt) => {
+            evt.stopPropagation();
             dispatch(deleteContact(id));
           }}
         >

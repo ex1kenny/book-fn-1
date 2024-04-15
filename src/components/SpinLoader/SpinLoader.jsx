@@ -13,7 +13,7 @@ export default function SpinLoader() {
 
   return (
     <div className={css.container}>
-      {showImg ? <img src="./sp1.svg" alt="Loader" /> : <h3>{text}</h3>}
+      {showImg ? <img src="./sp1.svg" alt="Loader" className={css.loader} /> : <h3>{text}</h3>}
     </div>
   );
 }

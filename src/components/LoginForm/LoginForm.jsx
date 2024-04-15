@@ -4,7 +4,6 @@ import { Formik, Form, Field, ErrorMessage } from "formik";
 import * as Yup from "yup";
 import { useId } from "react";
 import {
-  MdPerson,
   MdEmail,
   MdLock,
   MdVisibility,
@@ -77,7 +76,7 @@ export default function LoginForm() {
               placeholder="Enter your password"
             />
             <div className={css.passwordToggle} onClick={toggleShowPassword}>
-              {showPassword ? <MdVisibility /> : <MdVisibilityOff />}
+              {showPassword ? <MdVisibilityOff /> : <MdVisibility />}
             </div>
           </div>
           <ErrorMessage

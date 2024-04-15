@@ -14,6 +14,7 @@ const ContactsPage = lazy(() => import("../../pages/Contacts/Contacts"));
 const HomePage = lazy(() => import("../../pages/Home/Home"));
 const RegisterPage = lazy(() => import("../../pages/Register/Register"));
 const LoginPage = lazy(() => import("../../pages//Login//Login"));
+const NotFoundPage = lazy(() => import("../../pages/NotFound/NotFound"));
 
 export default function App() {
   const dispatch = useDispatch();
@@ -32,7 +33,7 @@ export default function App() {
       ) : (
         <>
           {isRefreshing ? (
-            <b>...Refreshing</b>
+            <b className={css.refresh}>...Refreshing</b>
           ) : (
             <div className={css.container}>
               <Routes>
@@ -65,6 +66,7 @@ export default function App() {
                       />
                     }
                   />
+                  <Route path="*" element={<NotFoundPage />} />
                 </Route>
               </Routes>
             </div>
