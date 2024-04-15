@@ -6,9 +6,8 @@
   margin: 80px auto 0;
   padding: 70px;
   background-color: #520796;
-  border-top-left-radius: 0;
-  border-bottom-left-radius: 0;
-  border-radius: 20px;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
 }
 .text {
   text-align: center;
@@ -40,5 +39,5 @@
 }
 .logButton:hover {
   background-color: lightblue;
-  color: #520796; 
+  color: #520796;
 }
